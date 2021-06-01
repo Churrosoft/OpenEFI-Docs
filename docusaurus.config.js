@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'OpenEFI | Docs',
+  title: 'Docs',
   tagline: 'Dinosaurs are cool',
   url: 'https://docs.openefi.tech',
   baseUrl: '/',
@@ -28,6 +28,10 @@ module.exports = {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'left',
         },
       ],
     },
@@ -99,4 +103,8 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'en'],
+  },
 };

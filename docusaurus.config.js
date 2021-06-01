@@ -2,7 +2,7 @@
 module.exports = {
   title: 'OpenEFI | Docs',
   tagline: 'Dinosaurs are cool',
-  url: 'docs.openefi.tech',
+  url: 'https://docs.openefi.tech',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

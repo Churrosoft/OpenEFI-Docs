@@ -31,7 +31,7 @@ module.exports = {
         },
         {
           type: "localeDropdown",
-          position: "left",
+          position: "right",
         },
       ],
     },
@@ -83,7 +83,7 @@ module.exports = {
     announcementBar: {
       id: "non_complete_bar",
       content:
-        "Pueden faltar secciones/items en esta documentacion, la misma aun no esta finalizada",
+        "Pueden faltar secciones/items en esta documentación, la misma aún no está finalizada",
       isCloseable: true,
     },
   },
@@ -98,10 +98,45 @@ module.exports = {
         blog: {
           showReadingTime: true,
           editUrl: "https://github.com/openefi/docs/edit/main/blog/",
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Churrosoft.`,
+            language: 'es',
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/docusaurus.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json', // your PWA manifest
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)',
+          },
+        ],
       },
     ],
   ],

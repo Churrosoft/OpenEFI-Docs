@@ -1,0 +1,1 @@
+(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[57],{3435:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"u-efi","name":"uefi","count":1,"permalink":"/blog/tags/u-efi"}')}}]);

@@ -1,9 +1,0 @@
-{
-  "name": "OpenEFI Docs",
-  "short_name": "OpenEFI Docs",
-  "theme_color": "#2123f3",
-  "background_color": "#216ff3",
-  "display": "standalone",
-  "scope": "/",
-  "start_url": "/"
-}

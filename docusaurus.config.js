@@ -13,16 +13,16 @@ module.exports = {
     navbar: {
       title: "OpenEFI | Docs",
       logo: {
-        alt: "My Site Logo",
+        alt: "OpenEFI Docs page",
         src: "img/logo.svg",
       },
       items: [
         { to: "/docs/intro", label: "Inicio", position: "left" },
         { to: "/docs/tuner/install", label: "Tuner", position: "left" },
-        { to: "/docs/hardware/intro", label: "Hardware", position: "left" },
+        /*  { to: "/docs/hardware/intro", label: "Hardware", position: "left" },
         { to: "/docs/firmware/intro", label: "Firmware", position: "left" },
         { to: "/docs/mechanic/intro", label: "Mecanica", position: "left" },
-        { to: "/docs/dashdash/intro", label: "DashDash", position: "left" },
+        { to: "/docs/dashdash/intro", label: "DashDash", position: "left" }, */
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/openefi/OpenEFI",
@@ -99,9 +99,9 @@ module.exports = {
           showReadingTime: true,
           editUrl: "https://github.com/openefi/docs/edit/main/blog/",
           feedOptions: {
-            type: 'all',
+            type: "all",
             copyright: `Copyright © ${new Date().getFullYear()} Churrosoft.`,
-            language: 'es',
+            language: "es",
           },
         },
         theme: {
@@ -112,29 +112,29 @@ module.exports = {
   ],
   plugins: [
     [
-      '@docusaurus/plugin-pwa',
+      "@docusaurus/plugin-pwa",
       {
         debug: true,
         offlineModeActivationStrategies: [
-          'appInstalled',
-          'standalone',
-          'queryString',
+          "appInstalled",
+          "standalone",
+          "queryString",
         ],
         pwaHead: [
           {
-            tagName: 'link',
-            rel: 'icon',
-            href: '/img/docusaurus.png',
+            tagName: "link",
+            rel: "icon",
+            href: "/img/docusaurus.png",
           },
           {
-            tagName: 'link',
-            rel: 'manifest',
-            href: '/manifest.json', // your PWA manifest
+            tagName: "link",
+            rel: "manifest",
+            href: "/manifest.json", // your PWA manifest
           },
           {
-            tagName: 'meta',
-            name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            tagName: "meta",
+            name: "theme-color",
+            content: "rgb(37, 194, 160)",
           },
         ],
       },
@@ -143,5 +143,15 @@ module.exports = {
   i18n: {
     defaultLocale: "es",
     locales: ["es", "en"],
+   /*  localeConfigs: {
+      en: {
+        label: "Español",
+        direction: "ltr",
+      },
+      fr: {
+        label: "English",
+        direction: "ltr",
+      },
+    }, */
   },
 };
